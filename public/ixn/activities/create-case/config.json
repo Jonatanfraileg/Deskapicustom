@@ -32,7 +32,7 @@
         }
     },
     "configurationArguments": {
-    	"applicationExtensionKey": "__activity-key__",
+    	"applicationExtensionKey": "DeskCrea",
         "defaults": { "priority": "4"},             
         "save": {
         	"url": "https://appparadesk.herokuapp.com/ixn/activities/create-case/save/",
