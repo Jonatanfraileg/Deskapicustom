@@ -15,14 +15,15 @@
     "arguments": {
         "execute": {       
 			"inArguments":[
-				{ "firstName":"{{Contact.Attribute.Equipo_MC_Modif.Nombre}}"},
-				{ "lastName":"{{Contact.Attribute.Equipo_MC_Modif.Apellidos}}"},
-				{ "emailAddress": "{{Contact.Default.Email}}"}							
+				{ "Contactkey":"{{Contact.Attribute.Challenge5.Contactkey}}"},
+				{ "firstName":"{{Contact.Attribute.Challenge5.FirstName}}"},
+				{ "lastName":"{{Contact.Attribute.Challenge5.LastName}}"},
+				{ "Email": "{{InteractionDefaults.Email}}"}							
 			],
             "outArguments": [
             	{ "caseID":"number" }
 			],			
-			"url": "https://appparadesk.herokuapp.com/ixn/activities/create-case/execute/",
+			"url": "https://custom-activity-may18.herokuapp.com/ixn/activities/create-case/execute/",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -35,26 +36,26 @@
     	"applicationExtensionKey": "DeskCrea",
         "defaults": { "priority": "4"},             
         "save": {
-        	"url": "https://appparadesk.herokuapp.com/ixn/activities/create-case/save/",
+        	"url": "https://custom-activity-may18.herokuapp.com/ixn/activities/create-case/save/",
             "body": "",
             "verb": "POST",
             "useJwt": false
         },
         "publish": {
-        	"url": "https://appparadesk.herokuapp.com/ixn/activities/create-case/publish/",
+        	"url": "https://custom-activity-may18.herokuapp.com/ixn/activities/create-case/publish/",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "validate": {
-        	"url": "https://appparadesk.herokuapp.com/ixn/activities/create-case/validate/",
+        	"url": "https://custom-activity-may18.herokuapp.com/ixn/activities/create-case/validate/",
             "verb": "POST",
             "body": "",
             "useJwt": false            
         }
     },
     "edit": {
-    	"url": "https://appparadesk.herokuapp.com/ixn/activities/create-case/",
+    	"url": "https://custom-activity-may18.herokuapp.com/ixn/activities/create-case/",
         "height": 400,
         "width": 500
     }
